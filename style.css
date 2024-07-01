@@ -53,7 +53,7 @@ main {
     background-color: #e0e0e0;
     text-decoration: none;
     color: #000;
-    font-size: 4em; /* Tăng kích thước biểu tượng FontAwesome */
+    font-size: 4em; /*Tăng kích thước biểu tượng FontAwesome */
     transition: background-color 0.3s;
 }
 

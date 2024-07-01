@@ -27,10 +27,10 @@ main {
 .icon-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+    gap: 2em; /* Tăng khoảng cách giữa các biểu tượng */
     background: #f0f0f0;
     border-radius: 15px;
-    padding: 2em;
+    padding: 4em; /* Tăng kích thước của khung */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,13 +38,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 120px; /* Tăng kích thước biểu tượng */
+    height: 120px; /* Tăng kích thước biểu tượng */
     border-radius: 50%;
     background-color: #e0e0e0;
     text-decoration: none;
     color: #000;
-    font-size: 2em;
+    font-size: 4em; /* Tăng kích thước biểu tượng FontAwesome */
     transition: background-color 0.3s;
 }
 

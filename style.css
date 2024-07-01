@@ -38,4 +38,23 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    color: #000;
+    font-size: 2em;
+    transition: background-color 0.3s;
+}
+
+.icon:hover {
+    background-color: #c0c0c0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}

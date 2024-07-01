@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,8 +10,15 @@ body {
 }
 
 header {
-    background-color: #fff;
-    color:#000;
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.main-header {
+    background-color: #000;
+    color: #fff;
     padding: 1em;
     text-align: center;
 }
@@ -20,6 +27,7 @@ main {
     flex: 1;
     padding: 2em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -32,6 +40,7 @@ main {
     border-radius: 15px;
     padding: 4em; /* Tăng kích thước của khung */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em; /* Khoảng cách dưới hộp biểu tượng */
 }
 
 .icon {
@@ -52,9 +61,19 @@ main {
     background-color: #c0c0c0;
 }
 
-footer {
-    background-color: #fff;
+.sub-header {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.sub-header h2 {
+    font-size: 1.5em;
     color: #000;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
     text-align: center;
     padding: 1em;
 }

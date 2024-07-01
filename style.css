@@ -64,7 +64,7 @@ main {
 
 .box-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Có 3 cột bằng nhau */
+    grid-template-columns: 1fr; /* Chỉ có 1 cột */
     gap: 2em; /* Khoảng cách giữa các box */
     margin-top: 2em;
 }

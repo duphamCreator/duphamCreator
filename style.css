@@ -1,141 +1,17 @@
 body {
-    font-family: Abel;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #fff;
-    color: #000;
-}
-
-header {
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-    font-size: 2em; /* Tăng kích thước chữ header */
-}
-
-.main-header {
-    background-color: #fff;
-    color: #000;
-    padding: 0;
-    text-align: center;
-}
-
-main {
-    flex: 1;
-    padding: 2em;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2em;
-    align-items: center;
-    justify-items: center;
-}
-
-.icon-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em; /* Tăng khoảng cách giữa các biểu tượng */
-    background: #ededed;
-    border-radius: 25px;
-    padding: 2em; /* Tăng kích thước của khung */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2em; /* Khoảng cách dưới hộp biểu tượng */
-    border: 2px solid #000000; /* Viền đen */
-}
-
-.icon {
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px; /* Tăng kích thước biểu tượng */
-    height: 120px; /* Tăng kích thước biểu tượng */
-    border-radius: 50%;
-    background-color: #e0e0e0;
-    text-decoration: none;
-    color: #000;
-    font-size: 4em; /* Tăng kích thước biểu tượng FontAwesome */
-    transition: background-color 0.3s;
+    height: 100vh;
+    background-color: #fbf4f4;
+    color: #000000;
 }
-
-.icon:hover {
-    background-color: #c0c0c0;
-}
-
-/* Màu sắc cho các icon */
-#youtube i { color: #FF0000; }
-#instagram i { color: #C13584; }
-#facebook i { color: #1877F2; }
-#tiktok i { color: #000000; }
-#shopee i { color: #FF5722; }
-#github i { color: #181717; }
-
-.box-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2em;
-    margin-top: 2em;
-}
-
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 2em; /* Giữ nguyên chiều dọc */
-    border-radius: 8px; /* Đổi border-radius từ 25px thành 8px cho phù hợp với phong cách Material Design */
-    background-color: #ffffff; /* Màu nền trắng */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
-    border: 2px solid #000000; /* Viền đen */
-}
-
-.box h2 {
-    font-size: 1.5em;
-    color: #000;
-}
-
-.image-box {
-    width: 100px; /* Thay đổi kích thước hình ảnh */
-    height: 100px; /* Thay đổi kích thước hình ảnh */
-    border-radius: 10px;
-    background-color: #cccccc; /* Màu sắc tạm thời */
-}
-
-.avatar-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start; /* Đẩy phần avatar về bên trái */
-    align-items: center;
-    margin-bottom: 2em; /* Khoảng cách dưới avatar */
-}
-
-.avatar {
-    width: 120px; /* Đặt kích thước của khung hình tròn */
-    height: 120px; /* Đặt kích thước của khung hình tròn */
-    overflow: hidden; /* Ẩn phần ngoài khung để làm hình ảnh tròn */
-    border-radius: 50%; /* Làm cho khung hình tròn */
-}
-
-.avatar img {
-    width: 100%; /* Đảm bảo rằng hình ảnh lấp đầy khung */
-    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị bóp méo */
-    display: block; /* Loại bỏ khoảng trống dư thừa */
-}
-
-.sub-header {
+header {
     text-align: center;
-    margin-top: 2em;
 }
-
-.sub-header h2 {
-    font-size: 1.5em;
-    color: #000;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
+h1 {
+    font-size: 3em;
 }

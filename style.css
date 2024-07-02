@@ -72,8 +72,8 @@ main {
 
 .box-container {
     display: grid;
-    grid-template-columns: 1fr; /* Chỉ có 1 cột */
-    gap: 2em; /* Khoảng cách giữa các box */
+    grid-template-columns: 1fr;
+    gap: 2em;
     margin-top: 2em;
 }
 
@@ -81,11 +81,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Sử dụng toàn bộ chiều rộng của container */
-    padding-inline: 4em;
-    border-radius: 25px;
-    background-color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 2em; /* Giữ nguyên chiều dọc */
+    border-radius: 8px; /* Đổi border-radius từ 25px thành 8px cho phù hợp với phong cách Material Design */
+    background-color: #ffffff; /* Màu nền trắng */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    border: 2px solid #000000; /* Viền đen */
 }
 
 .box h2 {
@@ -97,7 +98,7 @@ main {
     width: 100px; /* Thay đổi kích thước hình ảnh */
     height: 100px; /* Thay đổi kích thước hình ảnh */
     border-radius: 10px;
-    background-color: #ccc; /* Màu sắc tạm thời */
+    background-color: #cccccc; /* Màu sắc tạm thời */
 }
 
 .sub-header {
@@ -109,6 +110,7 @@ main {
     font-size: 1.5em;
     color: #000;
 }
+
 
 footer {
     background-color: #000;

@@ -101,6 +101,19 @@ main {
     background-color: #cccccc; /* Màu sắc tạm thời */
 }
 
+.avatar {
+    width: 120px; /* Đặt kích thước của khung hình tròn */
+    height: 120px; /* Đặt kích thước của khung hình tròn */
+    overflow: hidden; /* Ẩn phần ngoài khung để làm hình ảnh tròn */
+    border-radius: 50%; /* Làm cho khung hình tròn */
+}
+
+.avatar img {
+    width: 100%; /* Đảm bảo rằng hình ảnh lấp đầy khung */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị bóp méo */
+    display: block; /* Loại bỏ khoảng trống dư thừa */
+}
+
 .sub-header {
     text-align: center;
     margin-top: 2em;

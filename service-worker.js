@@ -2,8 +2,8 @@ const CACHE_NAME = 'du-pham-creator-v1';
 const urlsToCache = [
     '/',
     '/index.html',
-    '/style.css?v=1.0.1', // Cập nhật phiên bản
-    '/app.js?v=1.0.1', // Cập nhật phiên bản
+    '/style.css?v=1.0.2', // Cập nhật phiên bản
+    '/app.js?v=1.0.2', // Cập nhật phiên bản
     // Các tệp khác
 ];
 

@@ -43,7 +43,6 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1em;
     background: #ededed;
-    border-radius: 25px;
     padding: 2em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #ededed;

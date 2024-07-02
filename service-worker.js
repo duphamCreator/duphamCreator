@@ -2,9 +2,9 @@ const CACHE_NAME = 'du-pham-creator-v1';
 const urlsToCache = [
     '/',
     '/index.html',
-    '/style.css?v=1.0.2', // Cập nhật phiên bản
-    '/app.js?v=1.0.2', // Cập nhật phiên bản
-    // Các tệp khác
+    '/style.css',
+    '/app.js',
+    // Thêm các tệp khác cần cache ở đây
 ];
 
 self.addEventListener('install', event => {
@@ -21,7 +21,9 @@ self.addEventListener('fetch', event => {
         caches.match(event.request)
             .then(response => {
                 if (response) {
-                    return response;
+                    // Nếu tìm thấy trong cache, xóa cache và tải lại từ server
+                    caches.delete(CACHE_NAME);
+                    return fetch(event.request);
                 }
                 return fetch(event.request);
             })

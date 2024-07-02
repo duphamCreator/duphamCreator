@@ -12,9 +12,9 @@ body {
 header {
     background-color: #fff;
     color: #000;
-    /* padding: 1em; */
     text-align: center;
-    font-size: 2em;
+    font-size: 2em; /* Tăng kích thước chữ header */
+    padding: 1em; /* Thêm padding để tạo khoảng cách */
 }
 
 .main-header {
@@ -103,6 +103,14 @@ main {
     background-color: #cccccc; /* Màu sắc tạm thời */
 }
 
+.avatar-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Đẩy phần avatar về bên trái */
+    align-items: center;
+    margin-bottom: 2em; /* Khoảng cách dưới avatar */
+}
+
 .avatar {
     width: 120px; /* Đặt kích thước của khung hình tròn */
     height: 120px; /* Đặt kích thước của khung hình tròn */
@@ -125,7 +133,6 @@ main {
     font-size: 1.5em;
     color: #000;
 }
-
 
 footer {
     background-color: #000;

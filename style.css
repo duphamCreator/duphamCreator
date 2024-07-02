@@ -38,7 +38,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em; /* Tăng khoảng cách giữa các biểu tượng */
-    background: #cacaca;
+    background: #ededed;
     border-radius: 25px;
     padding: 4em; /* Tăng kích thước của khung */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

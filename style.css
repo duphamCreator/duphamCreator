@@ -1,26 +1,65 @@
+body {
+    font-family: Abel;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    background-color: #fff;
+    color: #000;
+    padding: 1em;
+    text-align: center;
+}
+
+.main-header {
+    background-color: #fff;
+    color: #000;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-items: center;
+}
+
 .icon-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-    background: #fff; /* Màu nền */
-    border-radius: 8px; /* Đường viền cong */
-    padding: 2em; /* Khoảng cách từ ngoài vào */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    gap: 2em; /* Tăng khoảng cách giữa các biểu tượng */
+    background: #f0f0f0;
+    border-radius: 25px;
+    padding: 4em; /* Tăng kích thước của khung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em; /* Khoảng cách dưới hộp biểu tượng */
 }
 
 .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* Làm tròn góc */
-    background-color: #f0f0f0; /* Màu nền của icon */
+    width: 120px; /* Tăng kích thước biểu tượng */
+    height: 120px; /* Tăng kích thước biểu tượng */
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    color: #000;
+    font-size: 4em; /* Tăng kích thước biểu tượng FontAwesome */
     transition: background-color 0.3s;
 }
 
 .icon:hover {
-    background-color: #e0e0e0; /* Màu nền khi hover */
+    background-color: #c0c0c0;
 }
 
 /* Màu sắc cho các icon */
@@ -31,54 +70,48 @@
 #shopee i { color: #FF5722; }
 #github i { color: #181717; }
 
-.avatar-container {
-    display: flex;
-    justify-content: flex-start; /* Căn trái */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    margin-top: 2em;
-}
-
-.avatar {
-    width: 80px;
-    height: 80px;
-    overflow: hidden;
-    border-radius: 50%; /* Làm tròn góc */
-    margin-right: 1em; /* Khoảng cách với box icon */
-}
-
-.avatar img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; /* Đảm bảo hình ảnh lấp đầy khung */
-    border-radius: 50%; /* Làm tròn góc */
-}
-
 .box-container {
     display: grid;
-    grid-template-columns: 1fr; /* Một cột */
+    grid-template-columns: 1fr;
     gap: 2em;
     margin-top: 2em;
 }
 
 .box {
-    padding: 1.5em;
-    border-radius: 8px;
-    background-color: #fff; /* Màu nền */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2em; /* Giữ nguyên chiều dọc */
+    border-radius: 8px; /* Đổi border-radius từ 25px thành 8px cho phù hợp với phong cách Material Design */
+    background-color: #ffffff; /* Màu nền trắng */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    border: 2px solid #000000; /* Viền đen */
 }
 
 .box h2 {
     font-size: 1.5em;
     color: #000;
-    margin-bottom: 0.5em;
 }
 
 .image-box {
-    width: 100px;
-    height: 100px;
+    width: 100px; /* Thay đổi kích thước hình ảnh */
+    height: 100px; /* Thay đổi kích thước hình ảnh */
     border-radius: 10px;
-    background-color: #ccc; /* Màu tạm thời */
+    background-color: #cccccc; /* Màu sắc tạm thời */
+}
+
+.avatar {
+    width: 120px; /* Đặt kích thước của khung hình tròn */
+    height: 120px; /* Đặt kích thước của khung hình tròn */
+    overflow: hidden; /* Ẩn phần ngoài khung để làm hình ảnh tròn */
+    border-radius: 50%; /* Làm cho khung hình tròn */
+}
+
+.avatar img {
+    width: 100%; /* Đảm bảo rằng hình ảnh lấp đầy khung */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị bóp méo */
+    display: block; /* Loại bỏ khoảng trống dư thừa */
 }
 
 .sub-header {
@@ -90,6 +123,7 @@
     font-size: 1.5em;
     color: #000;
 }
+
 
 footer {
     background-color: #000;

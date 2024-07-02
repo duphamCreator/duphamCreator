@@ -14,7 +14,7 @@ header {
     color: #000;
     text-align: center;
     font-size: 2em; /* Tăng kích thước chữ header */
-    /* padding: 1em; Thêm padding để tạo khoảng cách */
+    padding: 1em;
 }
 
 .main-header {
@@ -40,7 +40,7 @@ main {
     gap: 2em; /* Tăng khoảng cách giữa các biểu tượng */
     background: #ededed;
     border-radius: 25px;
-    padding: 4em; /* Tăng kích thước của khung */
+    padding: 2em; /* Tăng kích thước của khung */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2em; /* Khoảng cách dưới hộp biểu tượng */
     border: 2px solid #000000; /* Viền đen */

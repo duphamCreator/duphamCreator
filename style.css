@@ -138,42 +138,6 @@ body{
 #view-more-btn.hidden {
     display: none;
 }
-
-.footer {
-    background-color: #000;
-    color: #fff;
-    padding: 100px 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Căn giữa các nội dung trong footer */
-    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi không đủ không gian */
-}
-
-.footer-icons {
-    display: flex;
-    justify-content: space-around; /* Căn các icon theo chiều ngang để cách đều nhau */
-    width: 100%; /* Đảm bảo footer-icons chiếm toàn bộ chiều rộng của footer */
-}
-
-.footer-icon {
-    width: 100px; /* Điều chỉnh kích thước icon */
-    height: 100px; /* Điều chỉnh kích thước icon */
-    border-radius: 50%; /* Bo góc thành hình tròn */
-    background-color: #fff; /* Màu nền của icon */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em; /* Kích thước chữ icon */
-    color: #000; /* Màu chữ icon */
-    transition: background-color 0.3s, color 0.3s;
-    margin: 10px; /* Khoảng cách giữa các icon */
-}
-
-.footer-icon:hover {
-    background-color: #62babf; /* Màu nền hover */
-    color: #000; /* Màu chữ hover */
-}
-
 @media screen and (max-width: 1290px) {
     .item-shop .item-list {
         display: flex !important;
@@ -190,5 +154,4 @@ body{
         height: 90px !important; /* Chiều cao tự động thay đổi theo tỉ lệ */
     }
 }
-
 

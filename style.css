@@ -27,20 +27,6 @@ body{
     padding: 0 80px;
     margin-top: 30px;
 }
-
-.item-shop .category{
-    display: flex;
-    gap: 14px;
-}
-
-.item-shop .category a{
-    background-color: #dfdcdc;
-    padding: 8px 14px;
-    font-size: 18px;
-    border-radius: 14px;
-    transition: all 0.3s ease;
-}
-
 .item-shop .category a:hover{
     color: #fff;
     background-color: #0f2182;
@@ -86,6 +72,12 @@ body{
 .item-shop .item-list .item .btc p{
     font-size: 12px;
     color: #304ffe;
+    word-wrap: break-word; /* Tự động xuống dòng nếu cần thiết */
+}
+
+.item-shop .item-list .item .btc a{
+    font-size: 12px;
+    color: #304ffe;
 }
 
 .item-shop .item-list .item .info > p{
@@ -104,7 +96,7 @@ body{
 .item-shop .item-list .item .bid a{
     background-color: #edecec;
     padding: 6px 10px;
-    font-size: 13px;
+    font-size: 20px;
     border-radius: 10px;
 }
 

@@ -271,7 +271,7 @@ h2.separator{
 
 .view-more button:hover{
     color: #fff;
-    background: #0f2182;
+    background: #62babf;
 }
 
 .sellers{
@@ -303,62 +303,6 @@ h2.separator{
     margin-top: 8px;
 }
 
-footer{
-    background-color: #000;
-    color: #fff;
-    padding: 100px 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer h3{
-    font-size: 48px;
-}
-
-footer .right{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 26px;
-}
-
-footer .right .links{
-    display: flex;
-    gap: 30px;
-}
-
-footer .right .links a{
-    color: #989898;
-    transition: color 0.3s ease;
-}
-
-footer .right .links a:hover{
-    color: #fff;
-}
-
-footer .right .social{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-footer .right .social i{
-    font-size: 30px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-footer .right .social i:hover{
-    color: #304ffe;
-}
-
-footer .right p{
-    font-size: 13px;
-    color: #777;
-}
-
 @media screen and (max-width: 1400px) {
     
     nav,
@@ -382,15 +326,6 @@ footer .right p{
         width: 220px;
         height: 220px;
     }
-
-    footer{
-        padding: 100px 40px;
-    }
-
-    footer h3{
-        font-size: 38px;
-    }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -440,11 +375,6 @@ footer .right p{
     .sellers .item{
         width: 48%;
     }
-
-    footer .links a{
-        font-size: 15px;
-    }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -483,22 +413,6 @@ footer .right p{
     .sellers{
         gap: 20px;
     }
-
-    footer{
-        flex-direction: column;
-        padding: 60px 40px;
-    }
-
-    footer h3{
-        margin-bottom: 40px;
-        font-size: 32px;
-    }
-
-    footer .right{
-        width: 100%;
-        align-items: center;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -546,11 +460,6 @@ footer .right p{
     h2.separator{
         font-size: 30px;
     }
-
-    footer{
-        padding: 40px 20px;
-    }
-
 }
 
 @media screen and (max-width: 576px) {
@@ -580,30 +489,32 @@ footer .right p{
 footer {
     background-color: #000;
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
 }
 
 .footer-icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Chia footer thành 3 cột */
-    gap: 20px; /* Khoảng cách giữa các icon */
+    display: flex;
+    justify-content: space-around; /* Căn các icon theo chiều ngang để cách đều nhau */
+    width: 100%; /* Đảm bảo footer-icons chiếm toàn bộ chiều rộng của footer */
 }
 
 .footer-icon {
-    width: 60px; /* Điều chỉnh kích thước icon */
-    height: 60px; /* Điều chỉnh kích thước icon */
+    width: 100px; /* Điều chỉnh kích thước icon */
+    height: 100px; /* Điều chỉnh kích thước icon */
     border-radius: 50%; /* Bo góc thành hình tròn */
     background-color: #fff; /* Màu nền của icon */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px; /* Kích thước chữ icon */
+    font-size: 400%; /* Kích thước chữ icon */
     color: #000; /* Màu chữ icon */
     transition: background-color 0.3s, color 0.3s;
 }
 
 .footer-icon:hover {
-    background-color: #fff; /* Màu nền hover */
+    background-color: #62babf; /* Màu nền hover */
     color: #000; /* Màu chữ hover */
 }
+

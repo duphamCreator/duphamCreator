@@ -89,7 +89,7 @@ body{
 }
 
 .item-shop .item-list .item .info > p{
-    font-size: 30px;
+    font-size: 20px;
     color: #3c3b3b;
 }
 
@@ -181,32 +181,21 @@ body{
     background-color: #62babf; /* Màu nền hover */
     color: #000; /* Màu chữ hover */
 }
+
 @media screen and (max-width: 1290px) {
     .item-shop .item-list {
-        flex-direction: column; /* Hiển thị các sản phẩm theo chiều dọc */
+        display: flex !important;
+        flex-direction: column !important; /* Sắp xếp các item theo chiều dọc */
     }
 
-    .item-shop .item-list .item {
-        width: 100%; /* Mỗi sản phẩm chiếm hết chiều rộng của danh sách */
-        margin-bottom: 20px; /* Khoảng cách dưới giữa các sản phẩm */
+    .item {
+        width: 100% !important; /* Chiếm toàn bộ chiều ngang của danh sách */
+        margin-bottom: 20px !important; /* Khoảng cách dưới giữa các item */
     }
-}
 
-@media screen and (max-width: 992px) {
-    .item-shop .item-list .item {
-        width: 48%; /* Hiển thị 2 sản phẩm trên mỗi hàng */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .item-shop .item-list .item {
-        width: 100%; /* Hiển thị sản phẩm full width trên màn hình nhỏ */
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .item-shop .item-list .item {
-        width: 100%; /* Hiển thị sản phẩm full width trên màn hình siêu nhỏ */
+    .item img {
+        width: 100px !important; /* Đặt chiều rộng hình ảnh nhỏ hơn */
+        height: 100px !important; /* Chiều cao tự động thay đổi theo tỉ lệ */
     }
 }
 

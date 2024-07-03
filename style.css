@@ -508,7 +508,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 400%; /* Kích thước chữ icon */
+    font-size: 200%; /* Kích thước chữ icon */
     color: #000; /* Màu chữ icon */
     transition: background-color 0.3s, color 0.3s;
 }

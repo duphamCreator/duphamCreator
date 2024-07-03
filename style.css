@@ -194,8 +194,8 @@ body{
     }
 
     .item img {
-        width: 100px !important; /* Đặt chiều rộng hình ảnh nhỏ hơn */
-        height: 100px !important; /* Chiều cao tự động thay đổi theo tỉ lệ */
+        width: 90px !important; /* Đặt chiều rộng hình ảnh nhỏ hơn */
+        height: 90px !important; /* Chiều cao tự động thay đổi theo tỉ lệ */
     }
 }
 

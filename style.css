@@ -145,13 +145,37 @@ body{
     }
 
     .item {
-        width: 100% !important; /* Chiếm toàn bộ chiều ngang của danh sách */
-        margin-bottom: 20px !important; /* Khoảng cách dưới giữa các item */
+        width: 100% !important; /* Chiếm 80% chiều ngang của danh sách */
     }
 
-    .item img {
-        width: 90px !important; /* Đặt chiều rộng hình ảnh nhỏ hơn */
-        height: 90px !important; /* Chiều cao tự động thay đổi theo tỉ lệ */
+    /* Giữ tỉ lệ cho nhiều thiết bị khác nhau luôn đẹp */
+    .item-shop .item-list .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Giữ tỷ lệ hình ảnh và cắt ảnh để lấp đầy phần tử */
+        border-radius: 18px;
+    }
+
+    .item .info h5 {
+        font-size: 24px !important; /* Tăng kích thước chữ */
+    }
+
+    .item .info p {
+        font-size: 12px !important; /* Tăng kích thước chữ */
+    }
+
+    .item .bid p,
+    .item .bid a {
+        font-size: 12px !important; /* Tăng kích thước chữ */
+        padding: 12px 12px !important; /* Tăng kích thước padding */
+    }
+    /* Ẩn hình ảnh thứ hai */
+    .item-shop .item-list .item img:nth-child(2) {
+        display: none;
     }
 }
+
+
+
+
 

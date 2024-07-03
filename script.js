@@ -31,42 +31,39 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Lấy tất cả các ảnh trong danh sách sản phẩm
-const items = document.querySelectorAll('.item-shop .item-list .item img');
+document.addEventListener('DOMContentLoaded', function() {
+    // Lấy tất cả các ảnh trong danh sách sản phẩm
+    const items = document.querySelectorAll('.item-shop .item-list .item img');
 
-// Duyệt qua từng ảnh và thêm sự kiện click hoặc touchstart
-items.forEach(img => {
-    img.addEventListener('click', toggleZoom);
-    img.addEventListener('touchstart', toggleZoom);
+    // Duyệt qua từng ảnh và thêm sự kiện click hoặc touchstart
+    items.forEach(img => {
+        img.addEventListener('click', toggleZoom);
+        img.addEventListener('touchend', toggleZoom);
+    });
+
+    // Hàm xử lý sự kiện phóng to
+    function toggleZoom(event) {
+        // Ngăn chặn hành vi mặc định của sự kiện
+        event.preventDefault();
+
+        // Lấy ảnh hiện tại
+        const img = event.target;
+
+        // Kiểm tra xem ảnh đã phóng to chưa
+        const isZoomed = img.classList.contains('zoomed');
+
+        // Nếu chưa phóng to thì thêm lớp zoomed, ngược lại thì loại bỏ
+        if (!isZoomed) {
+            img.classList.add('zoomed');
+            img.classList.add('fullscreen');
+        } else {
+            img.classList.remove('zoomed');
+            img.classList.remove('fullscreen');
+        }
+    }
 });
 
-// Hàm xử lý sự kiện phóng to
-function toggleZoom(event) {
-    // Ngăn chặn hành vi mặc định của sự kiện
-    event.preventDefault();
 
-    // Lấy ảnh hiện tại
-    const img = event.target;
 
-    // Kiểm tra xem ảnh đã phóng to chưa
-    const isZoomed = img.classList.contains('zoomed');
-
-    // Nếu chưa phóng to thì thêm lớp zoomed, ngược lại thì loại bỏ
-    if (!isZoomed) {
-        img.classList.add('zoomed');
-        img.style.width = '400px'; // Đặt kích thước phóng to là toàn màn hình theo chiều ngang
-        img.style.height = '400px'; // Đặt kích thước phóng to là toàn màn hình theo chiều dọc
-        img.style.objectFit = 'contain'; // Hiển thị toàn bộ hình ảnh
-        img.style.cursor = 'zoom-out'; // Chuyển đổi con trỏ chuột
-        document.body.style.overflow = 'hidden'; // Ngăn cuộn trang khi phóng to
-    } else {
-        img.classList.remove('zoomed');
-        img.style.width = ''; // Xóa đặt kích thước khi loại bỏ zoom
-        img.style.height = ''; // Xóa đặt kích thước khi loại bỏ zoom
-        img.style.objectFit = ''; // Xóa object fit
-        img.style.cursor = ''; // Xóa chuyển đổi con trỏ chuột
-        document.body.style.overflow = ''; // Cho phép cuộn trang lại
-    }
-}
 
 

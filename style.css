@@ -577,3 +577,33 @@ footer .right p{
 #view-more-btn.hidden {
     display: none;
 }
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Chia footer thành 3 cột */
+    gap: 20px; /* Khoảng cách giữa các icon */
+}
+
+.footer-icon {
+    width: 60px; /* Điều chỉnh kích thước icon */
+    height: 60px; /* Điều chỉnh kích thước icon */
+    border-radius: 50%; /* Bo góc thành hình tròn */
+    background-color: #fff; /* Màu nền của icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Kích thước chữ icon */
+    color: #000; /* Màu chữ icon */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-icon:hover {
+    background-color: #fff; /* Màu nền hover */
+    color: #000; /* Màu chữ hover */
+}

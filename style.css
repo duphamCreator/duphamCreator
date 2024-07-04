@@ -100,7 +100,7 @@ body{
 .item-shop .item-list .item .bid a{
     background-color: #edecec;
     padding: 6px 10px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
 }
 
@@ -173,8 +173,8 @@ body{
 
     .item .bid p,
     .item .bid a {
-        font-size: 12px !important; /* Tăng kích thước chữ */
-        padding: 12px 12px !important; /* Tăng kích thước padding */
+        font-size: 14px !important; /* Tăng kích thước chữ */
+        padding: 10px 10px !important; /* Tăng kích thước padding */
     }
     /* Ẩn hình ảnh thứ hai */
     .item-shop .item-list .item img:nth-child(2) {

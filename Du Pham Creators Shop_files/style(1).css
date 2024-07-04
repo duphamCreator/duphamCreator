@@ -11,11 +11,9 @@ body{
     background-color: #f1f1f1;
 }
 .separator{
-    font-family: Raleway;
-    font-weight: 100;
     text-align:center;
-    font-size: 30px;
-    padding-top: 30px;
+    font-size: 22px;
+    padding: 20px;
 }
 .item-shop .item-list .item{
     padding: 20px;
@@ -30,7 +28,8 @@ body{
     flex-wrap: wrap;
 }
 .item-shop{
-    padding: 0 50px;
+    padding: 0 80px;
+    margin-top: 30px;
 }
 .item-shop .category a:hover{
     color: #fff;
@@ -105,19 +104,16 @@ body{
 }
 
 .item-shop .item-list .item .bid a{
-    display: flex;
-    color: #ffffff;
-    background: #000000;
-    border-radius: 10px;
-    font-weight: 400;
+    color: #304ffe;
+    background: transparent;
+    font-weight: bold;
     transition: all 0.3s ease;
-    font-size: 14px;
-    text-decoration: none;
+    font-size: 18px;
 }
 
 .item-shop .item-list .item .bid a:hover{
     color: #fff;
-    background-color: #0fada0;
+    background-color: #000;
 }
 
 .view-more{

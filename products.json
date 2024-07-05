@@ -17,5 +17,24 @@
         "combo": "Combo: 1 Túi Thần Kỳ Gấp Gọn + 1 Túi Đựng Giầy + 1 Cần Kéo",
         "beforeDiscount": "1,000,000",
         "buyLink": "https://shopee.vn/product/1045355141/22362337205/"
+    },
+    {
+        "images": ["assets/TuiRooShop.jpeg", "assets/TuiRooShop2.jpeg"],
+        "name": "Túi Du Lịch Thần Kỳ Gấp Gọn",
+        "description": "Vải Polyester Oxford chống thấm nước, chống trầy xước, phù hợp cho những chuyến du lịch bụi.",
+        "videoLink": "https://shopee.vn/product/1045355141/22362337205/",
+        "combo": "Combo: 1 Túi Thần Kỳ Gấp Gọn + 1 Túi Đựng Giầy + 1 Cần Kéo",
+        "beforeDiscount": "1,000,000",
+        "discount": "800,000",
+        "buyLink": "https://shopee.vn/product/1045355141/22362337205/"
+    },
+    {
+        "images": ["assets/TuiRooShop.jpeg", "assets/TuiRooShop2.jpeg"],
+        "name": "Túi Du Lịch Thần Kỳ Gấp Gọn",
+        "description": "Vải Polyester Oxford chống thấm nước, chống trầy xước, phù hợp cho những chuyến du lịch bụi.",
+        "videoLink": "https://shopee.vn/product/1045355141/22362337205/",
+        "combo": "Combo: 1 Túi Thần Kỳ Gấp Gọn + 1 Túi Đựng Giầy + 1 Cần Kéo",
+        "beforeDiscount": "1,000,000",
+        "buyLink": "https://shopee.vn/product/1045355141/22362337205/"
     }
 ]

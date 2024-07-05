@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('products.json')
+    fetch('https://github.com/duphamCreator/duphamCreator.github.io/blob/main/products.json')
         .then(response => response.json())
         .then(products => {
             const itemList = document.getElementById('item-list');

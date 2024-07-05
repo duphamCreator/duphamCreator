@@ -181,7 +181,10 @@ body{
         display: none;
     }
 }
-
+.normal-price {
+    font-size: 18px;
+    color: #3c3b3b;
+}
 
 
 

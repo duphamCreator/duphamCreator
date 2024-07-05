@@ -62,7 +62,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-
+function formatDate(date) {
+    const d = date.getDate().toString().padStart(2, '0');
+    const m = (date.getMonth() + 1).toString().padStart(2, '0'); // getMonth() returns 0-based index
+    const y = date.getFullYear().toString().padStart(2, '0');
+    const h = date.getHours().toString().padStart(2, '0');
+    const min = date.getMinutes().toString().padStart(2, '0');
+    return `${y}${m}${d}${h}${min}`;
+}
+const version = formatDate(new Date());
+document.write(`<script src="script.js?v=${version}"></script>`);
+document.write(`<link rel="stylesheet" href="style.css?v=${version}">`);
 
 
 

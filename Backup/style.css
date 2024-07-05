@@ -1,141 +1,188 @@
-body {
-    font-family: Abel;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+.separator{
+    font-family: Raleway;
+    font-weight: 300;
+    text-align:center;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.item-shop .item-list .item{
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: calc(25% - 20px);
+}
+.item-list {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #fff;
-    color: #000;
+    flex-wrap: wrap;
+}
+.item-shop{
+    padding: 0 50px;
+}
+.item-shop .category a:hover{
+    color: #fff;
+    background-color: #0f2182;
 }
 
-header {
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-    font-size: 2em; /* Tăng kích thước chữ header */
+.item-shop .item-list{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.main-header {
-    background-color: #fff;
-    color: #000;
-    padding: 0;
-    text-align: center;
+.item-shop .item-list .item img{
+    width: 260px;
+    height: 260px;
+    border-radius: 18px;
 }
 
-main {
-    flex: 1;
-    padding: 2em;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2em;
+.item-shop .item-list .item .info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #edecec;
+}
+
+.item-shop .item-list .item .info h5{
+    font-size: 18px;
+}
+
+.item-shop .item-list .item .info .btc{
+    margin-top: 10px;
+    display: flex;
     align-items: center;
-    justify-items: center;
+    gap: 5px;
 }
 
-.icon-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em; /* Tăng khoảng cách giữa các biểu tượng */
-    background: #ededed;
-    border-radius: 25px;
-    padding: 2em; /* Tăng kích thước của khung */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2em; /* Khoảng cách dưới hộp biểu tượng */
-    border: 2px solid #000000; /* Viền đen */
+.item-shop .item-list .item .btc i{
+    font-size: 22px;
+    color: #000000;
+}
+.item-shop .item-list .item .btc a{
+    font-size: 15px;
+    color: #0040ff;
+}
+.before-discount{
+    text-decoration: line-through;
+}
+.discount{
+    font-size: 15px;
+    color: red;
+}
+.item-shop .item-list .item .info > p{
+    font-size: 20px;
+    color: #3c3b3b;
 }
 
-.icon {
+.item-shop .item-list .item .bid{
+    padding: 14px 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-shop .item-list .item .bid p,
+.item-shop .item-list .item .bid a{
+    background-color: #edecec;
+    padding: 6px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.item-shop .item-list .item .bid a{
+    display: flex;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 10px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.item-shop .item-list .item .bid a:hover{
+    color: #fff;
+    background-color: #0fada0;
+}
+
+.view-more{
+    margin: 10px 0 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 120px; /* Tăng kích thước biểu tượng */
-    height: 120px; /* Tăng kích thước biểu tượng */
-    border-radius: 50%;
-    background-color: #e0e0e0;
-    text-decoration: none;
-    color: #000;
-    font-size: 4em; /* Tăng kích thước biểu tượng FontAwesome */
-    transition: background-color 0.3s;
 }
 
-.icon:hover {
-    background-color: #c0c0c0;
-}
-
-/* Màu sắc cho các icon */
-#youtube i { color: #FF0000; }
-#instagram i { color: #C13584; }
-#facebook i { color: #1877F2; }
-#tiktok i { color: #000000; }
-#20,000 i { color: #FF5722; }
-#github i { color: #181717; }
-
-.box-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2em;
-    margin-top: 2em;
-}
-
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 2em; /* Giữ nguyên chiều dọc */
-    border-radius: 8px; /* Đổi border-radius từ 25px thành 8px cho phù hợp với phong cách Material Design */
-    background-color: #ffffff; /* Màu nền trắng */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
-    border: 2px solid #000000; /* Viền đen */
-}
-
-.box h2 {
-    font-size: 1.5em;
-    color: #000;
-}
-
-.image-box {
-    width: 100px; /* Thay đổi kích thước hình ảnh */
-    height: 100px; /* Thay đổi kích thước hình ảnh */
+.view-more button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #dfdcdc;
     border-radius: 10px;
-    background-color: #cccccc; /* Màu sắc tạm thời */
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.avatar-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start; /* Đẩy phần avatar về bên trái */
-    align-items: center;
-    margin-bottom: 2em; /* Khoảng cách dưới avatar */
-}
-
-.avatar {
-    width: 120px; /* Đặt kích thước của khung hình tròn */
-    height: 120px; /* Đặt kích thước của khung hình tròn */
-    overflow: hidden; /* Ẩn phần ngoài khung để làm hình ảnh tròn */
-    border-radius: 50%; /* Làm cho khung hình tròn */
-}
-
-.avatar img {
-    width: 100%; /* Đảm bảo rằng hình ảnh lấp đầy khung */
-    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị bóp méo */
-    display: block; /* Loại bỏ khoảng trống dư thừa */
-}
-
-.sub-header {
-    text-align: center;
-    margin-top: 2em;
-}
-
-.sub-header h2 {
-    font-size: 1.5em;
-    color: #000;
-}
-
-footer {
-    background-color: #000;
+.view-more button:hover{
     color: #fff;
-    text-align: center;
-    padding: 1em;
+    background: #62babf;
 }
+
+/* Ẩn nút "View More" khi đã hiển thị hết các sản phẩm */
+#view-more-btn.hidden {
+    display: none;
+}
+@media screen and (max-width: 1290px) {
+    .item-shop .item-list {
+        display: flex !important;
+        flex-direction: column !important; /* Sắp xếp các item theo chiều dọc */
+    }
+
+    .item {
+        width: 100% !important; /* Chiếm 80% chiều ngang của danh sách */
+    }
+
+    /* Giữ tỉ lệ cho nhiều thiết bị khác nhau luôn đẹp */
+    .item-shop .item-list .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Giữ tỷ lệ hình ảnh và cắt ảnh để lấp đầy phần tử */
+        border-radius: 18px;
+    }
+
+    .item .info h5 {
+        font-size: 24px !important; /* Tăng kích thước chữ */
+    }
+
+    .item .info p {
+        font-size: 12px !important; /* Tăng kích thước chữ */
+    }
+
+    .item .bid p,
+    .item .bid a {
+        font-size: 14px !important; /* Tăng kích thước chữ */
+        padding: 10px 10px !important; /* Tăng kích thước padding */
+    }
+    /* Ẩn hình ảnh thứ hai */
+    .item-shop .item-list .item img:nth-child(2) {
+        display: none;
+    }
+}
+
+
+
+
+

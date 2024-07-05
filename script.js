@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://dupham.vercel.app/products.json')
+    fetch('/products.json')
         .then(response => response.json())
         .then(products => {
             const itemList = document.getElementById('item-list');

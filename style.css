@@ -10,7 +10,7 @@
 body{
     background-color: #f1f1f1;
 }
-.separator{
+.separator-itemList{
     font-family: Raleway;
     font-weight: 300;
     text-align:center;
@@ -185,7 +185,64 @@ body{
     font-size: 18px;
     color: #3c3b3b;
 }
-
+/* Profile CSS */
+.separator-profile{
+    font-family: Raleway;
+    font-weight: 300;
+    text-align:center;
+    font-size: 30px;
+}
+.profile{
+    padding: 0 50px;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+}
+.profile-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile .profile-list{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.profile .profile-list .profile-info{
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.profile .profile-list .profile-info .avatar{
+    width: 260px;
+    height: 260px;
+    border-radius: 18%;
+}
+.profile .profile-list .profile-info .info h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.profile .profile-list .profile-info .info p{
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+.profile .profile-list .profile-info .info .social-media{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.profile .profile-list .profile-info .info .social-media a{
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+.profile .profile-list .profile-info .info .social-media a:hover{
+    color: #0f2182;
+}
 
 
 

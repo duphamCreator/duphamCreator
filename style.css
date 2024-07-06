@@ -162,6 +162,12 @@ body{
         object-fit: cover; /* Giữ tỷ lệ hình ảnh và cắt ảnh để lấp đầy phần tử */
         border-radius: 18px;
     }
+    .profile .profile-list .profile-info .avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Giữ tỷ lệ hình ảnh và cắt ảnh để lấp đầy phần tử */
+        border-radius: 18px;
+    }
 
     .item .info h5 {
         font-size: 24px !important; /* Tăng kích thước chữ */

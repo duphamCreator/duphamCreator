@@ -167,6 +167,19 @@ body {
 }
 
 @media screen and (max-width: 1290px) {
+    /* Chỉ hiển thị 1 ảnh trên thiết bị mobile */
+    .item img {
+        display: none;
+    }
+    
+    .item img:first-child {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+    /* .... */
     .item-list, .profile-list {
         flex-direction: column;
     }

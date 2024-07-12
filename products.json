@@ -8,5 +8,14 @@
         "beforeDiscount": "1,000,000",
         "discount": "800,000",
         "buyLink": "https://shopee.vn/product/1045355141/22362337205/"
+    },{
+        "images": ["assets/TuiDeoCheo.jpeg", "assets/TuiDeoCheo01.jpeg"],
+        "name": "Túi Đeo Chéo Thần Kỳ Nhỏ Gọn",
+        "description": "Vải Polyester Oxford chống thấm nước, chống trầy xước, phù hợp cho những chuyến du lịch bụi.",
+        "videoLink": "https://vn.shp.ee/d2qskoJ"
+        "combo": "Combo: 1 Túi Đeo Chéo Thần Kỳ Nhỏ Gọn với 5 ngăn",
+        "beforeDiscount": "220,000",
+        "discount": "195,000",
+        "buyLink": "https://vn.shp.ee/d2qskoJ"
     }
 ]
